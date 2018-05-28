@@ -9,10 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- * @author Kiss
- * @date 2018/05/02 10:50
- */
+
 @Service
 public class SystemService {
     public final static String CAPTCHA_NAME = "captcha";

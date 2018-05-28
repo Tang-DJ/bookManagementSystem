@@ -4,10 +4,6 @@ import com.nix.model.RoleInterfaceModel;
 
 import java.util.List;
 
-/**
- * @author Kiss
- * @date 2018/05/04 17:37
- */
 public class RoleRoleInterfaceDto {
     //权限接口
     private RoleInterfaceModel roleInterface;

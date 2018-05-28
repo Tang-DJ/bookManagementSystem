@@ -7,7 +7,6 @@ import com.nix.service.impl.MemberService;
 import java.math.BigDecimal;
 
 /**
- * @author 11723
  * 用户
  */
 public class MemberBaseModel extends BaseModel<MemberBaseModel> {

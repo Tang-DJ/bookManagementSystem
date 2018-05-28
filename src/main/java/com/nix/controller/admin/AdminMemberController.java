@@ -14,10 +14,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author Kiss
- * @date 2018/05/01 23:53
- */
 @RestController
 @RequestMapping("/admin/member")
 @AdminController

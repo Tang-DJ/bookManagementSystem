@@ -13,10 +13,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author Kiss
- * @date 2018/05/03 11:46
- */
 @RestController
 @AdminController
 @RequestMapping("/admin/roleInterface")

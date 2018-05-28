@@ -6,8 +6,6 @@ import com.nix.service.BaseService;
 import java.util.List;
 
 /**
- * @author Kiss
- * @date 2018/05/02 1:02
  * 分页插件
  */
 public class Pageable<M extends BaseModel<M>> {

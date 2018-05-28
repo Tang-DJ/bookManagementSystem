@@ -3,8 +3,6 @@ package com.nix.model;
 import com.nix.model.base.BaseModel;
 
 /**
- * @author Kiss
- * @date 2018/05/01 19:02
  * 接口
  */
 public class RoleInterfaceModel extends BaseModel<RoleInterfaceModel> {

@@ -9,8 +9,6 @@ import java.util.List;
 
 /**
  * SQL工具类
- * 
- * @author Ming
  *
  */
 public class SQLUtil {

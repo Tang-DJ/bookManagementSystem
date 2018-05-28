@@ -15,10 +15,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author Kiss
- * @date 2018/05/05 20:02
- */
 @RestController
 @AdminController
 @RequestMapping("/system")

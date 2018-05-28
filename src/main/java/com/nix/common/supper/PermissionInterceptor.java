@@ -23,8 +23,6 @@ import java.lang.reflect.Method;
 import java.util.List;
 
 /**
- * @author Kiss
- * @date 2018/05/01 20:07
  * 权限管理
  */
 @Component

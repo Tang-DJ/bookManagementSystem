@@ -13,8 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 
 /**
- * @author Kiss
- * @date 2018/05/01 20:13
  * 用户service
  */
 @Service

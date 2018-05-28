@@ -13,8 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Kiss
- * @date 2018/05/01 22:56
  * 角色service
  */
 @Service

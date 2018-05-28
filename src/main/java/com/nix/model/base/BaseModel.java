@@ -6,9 +6,6 @@ import java.lang.reflect.Method;
 import java.util.Date;
 
 /**
- *
- * @author 11723
- * @date 2017/5/4
  * 实体基类
  */
 public class BaseModel<M extends BaseModel<M>> {

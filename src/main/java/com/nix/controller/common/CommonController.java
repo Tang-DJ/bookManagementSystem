@@ -16,8 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author Kiss
- * @date 2018/05/01 23:52
  * 公共核心controller
  */
 @Controller

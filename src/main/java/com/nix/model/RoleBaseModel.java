@@ -6,8 +6,6 @@ import com.nix.model.base.BaseModel;
 import java.util.List;
 
 /**
- * @author Kiss
- * @date 2018/05/01 18:59
  * 角色
  */
 public class RoleBaseModel extends BaseModel<RoleBaseModel> {

@@ -5,8 +5,6 @@ import com.nix.model.MemberBaseModel;
 import javax.servlet.http.HttpSession;
 
 /**
- * @author Kiss
- * @date 2018/05/01 20:08
  * 登录用户缓存
  */
 public final class MemberCache {

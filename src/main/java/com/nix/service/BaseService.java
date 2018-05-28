@@ -10,8 +10,6 @@ import java.util.List;
 
 /**
  *
- * @author 11723
- * @date 2017/5/4
  *
  * service实现接口的基本类
  * 实现了对继承{@link BaseModel}的model基础的增删改查接口

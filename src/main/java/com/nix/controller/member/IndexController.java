@@ -13,10 +13,6 @@ import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 
-/**
- * @author Kiss
- * @date 2018/04/25 11:30
- */
 @RestController
 @RequestMapping("/member")
 @MemberController
