@@ -3,7 +3,7 @@
 <mapper namespace="com.nix.dao.RoleMapper">
     <resultMap id="BaseResultMap" type="com.nix.model.RoleBaseModel">
         <id column="id" property="id" jdbcType="INTEGER"/>
-        <result column="createDate" property="createDate" jdbcType="TIMESTAMP"/>
+        <result column="createDate" property="createDate" jdbcType="naTIMESTAMP"/>
         <result column="updateDate" property="updateDate" jdbcType="TIMESTAMP"/>
         <result column="name" property="name" jdbcType="VARCHAR"/>
         <result column="value" property="value" jdbcType="VARCHAR"/>
@@ -85,6 +85,7 @@
     <select id="findByOneField" resultMap="BaseResultMap">
         select * from `role` where `${field}` = #{value,jdbcType=VARCHAR}
     </select>
+
     <select id="list" resultMap="BaseResultMap">
         select * from `role`
         <if test="conditions != null">

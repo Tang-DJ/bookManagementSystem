@@ -49,7 +49,7 @@ public class MemberService extends BaseService<MemberBaseModel> {
     @Override
     public MemberBaseModel add(MemberBaseModel model) throws Exception {
         if (ADMIN_USERNAME.equals(model.getUsername())) {
-            throw new WebException(401,"不能使用admin做完用户名");
+            throw new WebException(401,"不能使用admin做用户名");
         }
         return super.add(model);
     }
