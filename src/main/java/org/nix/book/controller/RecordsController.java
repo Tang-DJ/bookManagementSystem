@@ -28,9 +28,9 @@ public class RecordsController {
      *  借阅记录接口
      */
     @GetMapping(value = "/recordsList")
-    public Map<String,Object> findRecordsListByUserName(@RequestParam("userName")String userName) throws CloneNotSupportedException {
+    public Map<String,Object> findRecordsList() throws CloneNotSupportedException {
 
-        BaseResultDto recordsList = recordsService.findRecordsListByUserName(userName);
+        BaseResultDto recordsList = recordsService.findRecordsList();
 
         return new ResultMap()
                 .success("data",recordsList)

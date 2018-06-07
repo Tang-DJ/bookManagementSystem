@@ -1,6 +1,15 @@
 package org.nix.book.service;
 
+import org.nix.book.dao.repositories.BookReposition;
+import org.nix.book.dto.BookDto;
+import org.nix.book.dto.RecordsDto;
+import org.nix.book.dto.base.BaseResultDto;
+import org.nix.book.model.BookInfo;
+import org.nix.book.model.BorrowRecords;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @program: bookmanager
@@ -11,4 +20,17 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class BookService {
+
+    @Autowired
+    private BookReposition bookReposition;
+
+    public BaseResultDto findBookList() throws CloneNotSupportedException{
+        List<BookInfo> bookInfoList = bookReposition.findBookList();
+
+        if (bookInfoList.size()>0){
+            return new BookDto(bookInfoList).result();
+        }
+        return null;
+    }
+
 }

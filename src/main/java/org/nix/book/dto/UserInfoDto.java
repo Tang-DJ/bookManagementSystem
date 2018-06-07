@@ -2,9 +2,7 @@ package org.nix.book.dto;
 
 import org.nix.book.dto.base.AbstractResultDto;
 import org.nix.book.model.UserInfoModel;
-import org.nix.book.model.UserModel;
 
-import java.util.Date;
 import java.util.List;
 
 /**

@@ -23,9 +23,7 @@ public class BookDto extends AbstractResultDto {
 
     @Override
     public void handler() throws CloneNotSupportedException {
-        for (BookInfo model:bookInfos) {
-            model.setAuthor(null);
-        }
+
     }
 
     public List<BookInfo> getBookInfos() {

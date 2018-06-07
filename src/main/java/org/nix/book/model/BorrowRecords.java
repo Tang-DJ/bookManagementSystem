@@ -37,7 +37,8 @@ public class BorrowRecords extends BaseModel {
         return userModel;
     }
 
-    @OneToOne
+    @ManyToOne(targetEntity = BookInfo.class,cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @JoinColumn(name = "bookInfo",nullable = false)
     public BookInfo getBookInfo() {
         return bookInfo;
     }
@@ -54,7 +55,7 @@ public class BorrowRecords extends BaseModel {
         return shouldTime;
     }
 
-    @Column(name = "returnTime", length = 19, nullable = false)
+    @Column(name = "returnTime", length = 19, nullable = true)
     @Temporal(TemporalType.TIMESTAMP)
     public Date getReturnTime() {
         return returnTime;

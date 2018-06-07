@@ -24,8 +24,8 @@ public class RecordsService {
     @Autowired
     private RecordsReposition recordsReposition;
 
-    public BaseResultDto findRecordsListByUserName(String userName) throws CloneNotSupportedException{
-        List<BorrowRecords> borrowRecords = recordsReposition.findRecordsListByUserName(userName);
+    public BaseResultDto findRecordsList() throws CloneNotSupportedException{
+        List<BorrowRecords> borrowRecords = recordsReposition.findRecordsList();
 
         System.out.println(borrowRecords);
         if (borrowRecords.size()>0){

@@ -11,7 +11,7 @@ public interface RecordsReposition extends JpaRepository<BorrowRecords,Integer> 
 
     @Query(nativeQuery = true,
             value = "SELECT * FROM borrow_records ")
-    List<BorrowRecords> findRecordsListByUserName(String userName);
+    List<BorrowRecords> findRecordsList();
 
 
 }
