@@ -36,10 +36,10 @@ public class UserController {
      * 登录接口
      */
     @PostMapping(value = "/login")
-    public Map<String,Object> login(@RequestParam("userId")String userId,
+    public Map<String,Object> login(@RequestParam("userName")String userName,
                                     @RequestParam("password")String password)throws CloneNotSupportedException{
 
-        BaseResultDto userList = userService.login(userId,password);
+        BaseResultDto userList = userService.login(userName,password);
 
         if (userList!=null){
             return new ResultMap()
@@ -56,9 +56,17 @@ public class UserController {
      * **/
     @PostMapping(value = "/register")
     public Map<String,Object> register(@ModelAttribute("UserModel")UserModel userModel,
-                                       @ModelAttribute("UserInfoModel")UserInfoModel userInfoModel) throws CloneNotSupportedException{
+                                       @ModelAttribute("UserInfoModel")UserInfoModel userInfoModel) throws Exception{
 
-        return null;
+        if (userService.hasRegister(userModel.getUserName())){
+            return new ResultMap()
+                    .fail("账号已注册！")
+                    .send();
+        }
+
+
+
+        return new ResultMap().success().send();
     }
 
 }

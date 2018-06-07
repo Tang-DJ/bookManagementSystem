@@ -2,10 +2,7 @@ package org.nix.book.model;
 
 import org.nix.book.model.base.BaseModel;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -17,6 +14,8 @@ public class UserModel extends BaseModel {
     private String password;
 
     private UserInfoModel userInfoModel;
+
+    private RoleModel roleModel;
 
     @Column(name = "userName",nullable = false, unique = true,length = 12)
     public String getUserName() {
@@ -33,6 +32,12 @@ public class UserModel extends BaseModel {
         return userInfoModel;
     }
 
+    @ManyToOne(targetEntity = RoleModel.class,cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @JoinColumn(name = "roleModel",nullable = false)
+    public RoleModel getRoleModel() {
+        return roleModel;
+    }
+
     public void setUserName(String userName) {
         this.userName = userName;
     }
@@ -45,21 +50,25 @@ public class UserModel extends BaseModel {
         this.userInfoModel = userInfoModel;
     }
 
+    public void setRoleModel(RoleModel roleModel) {
+        this.roleModel = roleModel;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
         UserModel userModel = (UserModel) o;
         return Objects.equals(userName, userModel.userName) &&
                 Objects.equals(password, userModel.password) &&
-                Objects.equals(userInfoModel, userModel.userInfoModel);
+                Objects.equals(userInfoModel, userModel.userInfoModel) &&
+                Objects.equals(roleModel, userModel.roleModel);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(super.hashCode(), userName, password, userInfoModel);
+        return Objects.hash(userName, password, userInfoModel, roleModel);
     }
 
     @Override
@@ -68,6 +77,7 @@ public class UserModel extends BaseModel {
                 "userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", userInfoModel=" + userInfoModel +
+                ", roleModel=" + roleModel +
                 '}';
     }
 }
