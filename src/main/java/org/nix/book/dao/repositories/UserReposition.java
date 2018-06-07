@@ -9,8 +9,8 @@ import java.util.List;
 public interface UserReposition extends JpaRepository<UserModel,Integer> {
 
     @Query(nativeQuery = true,
-            value = "SELECT * FROM user_model,user_info_model WHERE user_model.user_info_model_id = user_info_model.id")
-    List<UserModel> findUserModelsByUserName(String userName);
+            value = "SELECT * FROM user_model")
+    List<UserModel> findUserModelList();
 
     @Query(nativeQuery = true,
             value = "SELECT * FROM user_model WHERE user_name = ?1 AND `password` = ?2")

@@ -24,13 +24,13 @@ public class UserService {
 
     /**
      * 获得user列表
-     * @param userName
+     * @param
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto findUserListByUserName(String userName) throws CloneNotSupportedException{
+    public BaseResultDto findUserModelList() throws CloneNotSupportedException{
 
-        List<UserModel> userList = userReposition.findUserModelsByUserName(userName);
+        List<UserModel> userList = userReposition.findUserModelList();
 
         System.out.println(userList);
         if (userList.size()>0){

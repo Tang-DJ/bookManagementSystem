@@ -26,9 +26,9 @@ public class UserController {
      *  用户列表接口
      */
     @GetMapping(value = "/userList")
-    public Map<String,Object> findUserListByUserName(@RequestParam("userName")String userName) throws CloneNotSupportedException {
+    public Map<String,Object> findUserListByUserName() throws CloneNotSupportedException {
 
-        BaseResultDto userList = userService.findUserListByUserName(userName);
+        BaseResultDto userList = userService.findUserModelList();
 
         return new ResultMap()
                 .success("data",userList)

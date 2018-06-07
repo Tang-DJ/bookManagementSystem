@@ -15,9 +15,9 @@ var TableInit = function () {
     var oTableInit = new Object();
     //初始化Table
     oTableInit.Init = function () {
-        $('#roleTable').bootstrapTable({
-            url: '',         //请求后台的URL（*）
-            method: 'get',                      //请求方式（*）
+        $('#userTable').bootstrapTable({
+            url: '/user/userList',         //请求后台的URL（*）
+            method: 'GET',                      //请求方式（*）
             toolbar: '#toolbar',                //工具按钮用哪个容器
             striped: true,                      //是否显示行间隔色
             cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
@@ -25,7 +25,7 @@ var TableInit = function () {
             sortable: false,                     //是否启用排序
             sortOrder: "asc",                   //排序方式
             queryParams: oTableInit.queryParams,//传递参数（*）
-            sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
+            sidePagination: "client",           //分页方式：client客户端分页，server服务端分页（*）
             pageNumber:1,                       //初始化加载第一页，默认第一页
             pageSize: 10,                       //每页的记录行数（*）
             pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
@@ -40,23 +40,48 @@ var TableInit = function () {
             showToggle:true,                    //是否显示详细视图和列表视图的切换按钮
             cardView: false,                    //是否显示详细视图
             detailView: false,                   //是否显示父子表
+            responseHandler: function(result) {
+                return {
+                    result : result
+                };
+            },
+            onLoadSuccess: function(data) {
+                $('#userTable').bootstrapTable('removeAll');
+                $('#userTable').bootstrapTable('append',data.result.data.userList);
+            },
             columns: [{
                 checkbox: true
             }, {
-                field: 'UserId',
+                field: 'id',
                 title: '用户编号'
             }, {
-                field: 'UserName',
+                field: 'userName',
                 title: '用户名'
             }, {
-                field: 'Email',
+                field: 'createDate',
+                title: '创建时间',
+                formatter: function (value, row, index) {
+                    var unixTimestamp = new Date(value) ;
+                    return  unixTimestamp.toLocaleString();
+                }
+            }, {
+                field: 'userInfoModel.departments',
+                title: '学院'
+            }, {
+                field: 'userInfoModel.major',
+                title: '专业'
+            }, {
+                field: 'userInfoModel.email',
                 title: '邮箱'
             }, {
-                field: 'Phone',
+                field: 'userInfoModel.phone',
                 title: '电话'
             }, {
-                field: 'Department',
-                title: 'Department'
+                field: 'userInfoModel.max',
+                title: '最大借阅数'
+            }, {
+                field: 'userInfoModel.lendedNum',
+                title: '当前借阅数'
             } ]
         });
     };

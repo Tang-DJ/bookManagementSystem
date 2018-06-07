@@ -2,198 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7abd489a-d505-4bc3-8329-6a56b43e8525" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bookmanage.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/dto/UserInfoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/css/component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/css/flexslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/css/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/css/popuo-box.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/b1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/b2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/b3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/bus1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/bus2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/bus3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/bus4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/bus5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/bus6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/bus7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/bus8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/bus9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/c1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/c2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/c3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/c4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/c5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/c6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/comm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/cont.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/enter code.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/i1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/i2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/i3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/icon-eye.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/im1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/im2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/im3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/image1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/image2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/img-sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/img-sprite1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/img3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/img4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/med.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/nav-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/samrt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/search2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/t1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/t2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/t3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/t4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/to-top2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/images/web.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/cbpViewModeSwitch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/easing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/easyResponsiveTabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/jquery.easydropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/jquery.flexisel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/jquery.flexslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/jquery.magnific-popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/modernizr.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/move-top.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/owl.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/responsiveslides.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/role.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/records.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/role.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Background/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/commend.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/css/bootstrap5152.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/css/main5152.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/css/responsive5152.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/home-categories-description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/Descr.WD3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/calendar-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/category-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/category-main-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/comment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/devine-art.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/faq-minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/faq-plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/flickr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/footer-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/glyphicons-halflings-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/glyphicons-halflings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/google.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/image-large.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/li-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/like-btn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/like.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/linked-in.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/main-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/plus-minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/question-large.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/question.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/quote.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/rss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/scroll-top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/search-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/skype.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/standard-large.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/standard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/stumble.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/support.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/temp/Descr.WD3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/temp/living-room-770x501.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/temp/man.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/twitter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/video-large.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/images/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/custom5152.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/jflickrfeed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/jquery-1.8.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/jquery.easing.1.3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/jquery.easing.1.34e44.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/jquery.liveSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/jquery.liveSearchd5f7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/jquery.validate.minfc6b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/records.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/personal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/records.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/single.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/loginStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-3.3.7-dist/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-table/bootstrap-table-zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-table/bootstrap-table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/bootstrap-table/bootstrap-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/js/bootstrap-paginator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resource/js/md5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/controller/RecordsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/controller/RecordsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/controller/RoleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/RoleReposition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/RoleReposition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/UserReposition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/UserReposition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/dto/RoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/dto/RoleDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/model/UserInfoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/model/UserInfoModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/model/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/service/RoleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/controller/RecordsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/controller/RecordsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/controller/RoleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/dao/repositories/BookReposition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/dao/repositories/BookReposition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/dao/repositories/RecordsReposition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/dao/repositories/RecordsReposition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/dao/repositories/RoleReposition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/dao/repositories/RoleReposition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/dao/repositories/UserReposition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/dao/repositories/UserReposition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/dto/BookDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/dto/BookDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/dto/RecordsDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/dto/RecordsDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/dto/RoleDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/dto/RoleDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/dto/UserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/model/UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/model/UserModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/service/RecordsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/service/RecordsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/service/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Background/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Background/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Background/js/role.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/role.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Background/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Background/js/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Background/records.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Background/records.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Background/role.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Background/role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Background/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Background/user.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -205,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java">
+      <file leaf-file-name="UserReposition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/UserReposition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+            <state relative-caret-position="147">
+              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,11 +36,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MainTest.java">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+            <state relative-caret-position="398">
+              <caret line="66" column="25" lean-forward="true" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -232,8 +63,8 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="905">
-              <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+            <state relative-caret-position="277">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -241,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecordsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/RecordsController.java">
+      <file leaf-file-name="RoleController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/RoleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="32" column="87" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
+            <state relative-caret-position="299">
+              <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -253,20 +84,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+      <file leaf-file-name="role.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/role.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+            <state relative-caret-position="388">
+              <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/RoleService.java">
+      <file leaf-file-name="UserDto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dto/UserDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="172">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -274,50 +108,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInfoDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dto/UserInfoDto.java">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/js/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="29" selection-end-column="40" />
+            <state relative-caret-position="244">
+              <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#838#839#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInfoModel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/model/UserInfoModel.java">
+      <file leaf-file-name="role.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/js/role.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-                <element signature="e#744#745#0" expanded="true" />
-                <element signature="e#2011#2012#0" expanded="true" />
-                <element signature="e#2043#2044#0" expanded="true" />
-                <element signature="e#2094#2095#0" expanded="true" />
-                <element signature="e#2136#2137#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/model/UserModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="395">
+              <caret line="68" column="13" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="68" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -337,6 +153,8 @@
       <find>updataDate</find>
       <find>ManyToOne</find>
       <find>lendednum</find>
+      <find>role.js</find>
+      <find>querySelectorAll</find>
     </findStrings>
     <replaceStrings>
       <replace>updateDate</replace>
@@ -364,23 +182,29 @@
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dto/RecordsDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/RecordsReposition.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/service/RecordsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/controller/RoleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/controller/RecordsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/model/UserModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dto/UserDto.java" />
         <option value="$PROJECT_DIR$/src/main/web/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/register.html" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/RoleReposition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dto/RoleDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/service/RoleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/UserReposition.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dto/UserInfoDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/model/UserInfoModel.java" />
         <option value="$PROJECT_DIR$/src/test/java/MainTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Background/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Background/records.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/controller/RoleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dto/RoleDto.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Background/role.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Background/js/role.js" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/UserReposition.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Background/user.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Background/js/user.js" />
       </list>
     </option>
   </component>
@@ -566,6 +390,25 @@
               <item name="bookmanager" type="b2602c69:ProjectViewProjectNode" />
               <item name="bookmanager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Background" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookmanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Background" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookmanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -688,6 +531,9 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.nix.book.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -728,8 +574,8 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.MainTest.userTest" />
-      <item itemvalue="Spring Boot.Application" />
       <item itemvalue="JUnit.MainTest.userInfoTest" />
+      <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
       <list>
@@ -757,7 +603,7 @@
       <workItem from="1528254032953" duration="13842000" />
       <workItem from="1528302170416" duration="11117000" />
       <workItem from="1528350205104" duration="3298000" />
-      <workItem from="1528357788202" duration="13355000" />
+      <workItem from="1528357788202" duration="21310000" />
     </task>
     <servers />
   </component>
@@ -794,7 +640,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64303000" />
+    <option name="totallyTimeSpent" value="72258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -818,10 +664,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13361463" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29817158" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
@@ -876,74 +722,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java</url>
-          <line>80</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1722">
-          <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/model/UserInfoModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="50" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#2011#2012#0" expanded="true" />
-            <element signature="e#2043#2044#0" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
-            <element signature="e#2136#2137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/model/base/BaseModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/model/UserModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/DruidDBConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1848">
@@ -1116,16 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/RecordsService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1167,13 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/js/role.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/model/RoleModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1194,24 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dto/RoleDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dto/RecordsDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -1222,60 +969,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="60" column="34" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dto/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/UserReposition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
           <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="905">
-          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1299,16 +996,6 @@
             <element signature="e#838#839#0" expanded="true" />
             <element signature="e#907#908#0" expanded="true" />
             <element signature="e#955#956#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1342,8 +1029,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/model/UserInfoModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="-276">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#617#618#0" expanded="true" />
@@ -1355,6 +1042,146 @@
             <element signature="e#2094#2095#0" expanded="true" />
             <element signature="e#2136#2137#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="64" column="45" selection-end-line="89" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/records.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/js/responsiveslides.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dto/RoleDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="66" column="25" lean-forward="true" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/role.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dto/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/UserReposition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/js/role.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="68" column="13" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="68" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/js/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
         </state>
       </provider>
     </entry>

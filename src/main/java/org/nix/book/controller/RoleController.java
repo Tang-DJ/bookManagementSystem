@@ -29,7 +29,7 @@ public class RoleController {
      *  角色列表接口
      */
     @GetMapping(value = "/roleList")
-    public Map<String,Object> findUserListByUserName() throws CloneNotSupportedException {
+    public Map<String,Object> findRoleList() throws CloneNotSupportedException {
 
         BaseResultDto roleList = roleService.findRoleList();
 
