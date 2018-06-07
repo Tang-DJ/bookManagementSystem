@@ -27,7 +27,8 @@ public class UserModel extends BaseModel {
         return password;
     }
 
-    @OneToOne
+    @OneToOne(targetEntity = UserInfoModel.class,cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @JoinColumn(name = "userInfoModel",nullable = false)
     public UserInfoModel getUserInfoModel() {
         return userInfoModel;
     }

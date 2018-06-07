@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script src="./resource/js/jquery.min.js"></script>
+    <link href="./loginStyle.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div class="htmleaf-container">
+    <div id="wrapper" class="login-page">
+        <div id="login_form" class="form">
+            <form class="login-form">
+                <input type="text" placeholder="用户账号" id="user_name"/>
+                <input type="text" placeholder="学院" id="department"/>
+                <input type="text" placeholder="专业" id="major"/>
+                <input type="text" placeholder="电话号码" id="phone_number"/>
+                <input type="email" placeholder="邮箱" id="email">
+                <input type="password" placeholder="密码" id="password"/>
+                <input type="password" placeholder="再次输入密码" id="againPass"/>
+
+            </form>
+            <button id="reg">注 册</button>
+            <p class="message">已经有了一个账户? <a href="index.html" style="text-decoration: none">立刻登录</a></p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    var registerUrl = "/user/register";
+    $(document).ready(function () {
+
+
+        $("#reg").click(function () {
+            var name = $("#user_name").val();
+            var password = $("#password").val();
+            var againPass = $("#againPass").val();
+            var department = $("#department").val();
+            var major = $("#major").val();
+            var email = $("#email").val();
+            var phoneNum = $("#phone_number").val();
+
+            if(password == againPass){
+                if( name != null && name != "" &&
+                    password != null  && password != "" &&
+                    againPass != null && againPass != "" &&
+                    department != null && department != "" &&
+                    major != null && major != "" &&
+                    email != null && email != "" &&
+                    phoneNum != null && phoneNum != ""){
+                    $.ajax({
+                        type: "post",
+                        url: registerUrl,
+                        data: {
+                            "userName": name,
+                            "password": password,
+                            "departments": department,
+                            "major": major,
+                            "phone": phoneNum,
+                            "email": email
+                        },
+                        dataType: "json",
+                        success: function (data) {
+                            console.log(data);
+                            if(data.code == "0") {
+                                alert("注册成功");
+                                window.location.href = "index.html"
+                            }
+                            else{
+                                alert("注册失败");
+                            }
+                        },
+                        error: function () {
+                            alert("连接失败");
+                        }
+                    });
+                }
+                else {
+                    alert("请填写完个人信息！！")
+                }
+            }
+            else{
+                alert("两次密码不一样");
+            }
+        })
+    })
+</script>
+</body>
+</html>

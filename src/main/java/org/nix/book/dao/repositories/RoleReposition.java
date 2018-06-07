@@ -12,6 +12,8 @@ public interface RoleReposition extends JpaRepository<RoleModel,Integer> {
             value = "SELECT * FROM role_model")
     List<RoleModel> findRoleList();
 
-
+    @Query(nativeQuery = true,
+            value = "SELECT * FROM role_model WHERE id=?1")
+    RoleModel findRoleById(String id);
 
 }

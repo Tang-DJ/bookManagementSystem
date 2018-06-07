@@ -13,11 +13,11 @@ public interface UserReposition extends JpaRepository<UserModel,Integer> {
     List<UserModel> findUserModelsByUserName(String userName);
 
     @Query(nativeQuery = true,
-            value = "SELECT * FROM user_model WHERE userName = ?1 AND `password` = ?2")
+            value = "SELECT * FROM user_model WHERE user_name = ?1 AND `password` = ?2")
     List<UserModel> login(String userName,String password);
 
     @Query(nativeQuery = true,
-            value = "SELECT * FROM user_model WHERE userName = ?1")
+            value = "SELECT * FROM user_model WHERE user_name = ?1")
     List<UserModel> hasRegister(String userName);
 
     @Query(nativeQuery = true,

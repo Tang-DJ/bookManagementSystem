@@ -25,7 +25,6 @@ public class UserDto extends AbstractResultDto {
     public void handler() throws CloneNotSupportedException {
         for (UserModel model:userList) {
             model.setPassword(null);
-            model.setUserInfoModel(null);
         }
     }
 

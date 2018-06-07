@@ -32,14 +32,23 @@ public class RoleService {
     public BaseResultDto findRoleList() throws CloneNotSupportedException{
         List<RoleModel> roleModels = roleReposition.findRoleList();
 
-        System.out.println(roleModels);
         if (roleModels.size()>0){
             return new RoleDto(roleModels).result();
         }
         return null;
     }
 
+    /**
+     * 根据roleid获得实体
+     * @param id
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    public RoleModel findRoleById(String id) throws CloneNotSupportedException{
+        RoleModel roleModel = roleReposition.findRoleById(id);
+        return roleModel;
 
+    }
 
 
 }

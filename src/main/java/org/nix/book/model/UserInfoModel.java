@@ -3,9 +3,7 @@ package org.nix.book.model;
 import org.hibernate.validator.constraints.Length;
 import org.nix.book.model.base.BaseModel;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
 
@@ -20,45 +18,48 @@ public class UserInfoModel extends BaseModel {
     private Integer max;
     private Date time;
     private Integer lendedNum;
+    private UserModel userModel;
+
+    @OneToOne(mappedBy = "userInfoModel",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    public UserModel getUserModel() {
+        return userModel;
+    }
+
+    public void setUserModel(UserModel userModel) {
+        this.userModel = userModel;
+    }
 
     @Column(name = "departments",nullable = false)
-    @Length(min = 1,max = 255,message = "院系格式错误")
     public String getDepartments() {
         return departments;
     }
 
     @Column(name = "major",nullable = false)
-    @Length(min = 1,max = 255,message = "专业格式错误")
     public String getMajor() {
         return major;
     }
 
     @Column(name = "email")
-    @Length(min = 1,max = 255,message = "邮箱格式错误")
     public String getEmail() {
         return email;
     }
 
     @Column(name = "max",nullable = false)
-    @Length(min = 1,max = 255,message = "可借最大数量格式错误")
     public Integer getMax() {
         return max;
     }
 
     @Column(name = "time",nullable = false)
-    @Length(min = 1,max = 255,message = "可借期限格式错误")
     public Date getTime() {
         return time;
     }
 
-    @Column(name = "lendedNum",nullable = false)
-    @Length(min = 1,max = 255,message = "在借数量格式错误")
+    @Column(name = "lendedNum")
     public Integer getLendedNum() {
         return lendedNum;
     }
 
-    @Column(name = "phone",unique = true,length = 12)
-    @Length(min = 8,max = 12,message = "电话号码格式错误")
+    @Column(name = "phone",unique = true)
     public String getPhone() {
         return phone;
     }

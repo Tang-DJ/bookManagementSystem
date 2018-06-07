@@ -70,6 +70,11 @@ public class UserService {
         return false;
     }
 
+    public boolean register(UserModel userModel) throws CloneNotSupportedException{
+        userReposition.save(userModel);
+        return true;
+    }
+
 
 
 }

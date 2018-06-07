@@ -17,10 +17,13 @@ public class RoleDto extends AbstractResultDto {
 
 
     private List<RoleModel> roleModels;
-
+    private RoleModel roleModell;
 
     public RoleDto(List<RoleModel> roleModels) {
         this.roleModels = roleModels;
+    }
+    public RoleDto(RoleModel roleModels) {
+        this.roleModell = roleModell;
     }
 
     @Override
@@ -34,7 +37,15 @@ public class RoleDto extends AbstractResultDto {
         return roleModels;
     }
 
+    public RoleModel getRoleModell() {
+        return roleModell;
+    }
+
     public void setRoleModels(List<RoleModel> roleModels) {
         this.roleModels = roleModels;
+    }
+
+    public void setRoleModell(RoleModel roleModell) {
+        this.roleModell = roleModell;
     }
 }
