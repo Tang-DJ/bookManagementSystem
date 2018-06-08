@@ -70,11 +70,30 @@ public class UserService {
         return false;
     }
 
+    /**
+     * 注册
+     * @param userModel
+     * @return
+     * @throws CloneNotSupportedException
+     */
     public boolean register(UserModel userModel) throws CloneNotSupportedException{
         userReposition.save(userModel);
         return true;
     }
 
 
+    /**
+     * 用户详情
+     * @param id
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    public BaseResultDto findUserById(String id) throws CloneNotSupportedException{
 
+        List<UserModel> userList = userReposition.findUserById(id);
+        if (userList.size()>0){
+            return new UserDto(userList).result();
+        }
+        return null;
+    }
 }

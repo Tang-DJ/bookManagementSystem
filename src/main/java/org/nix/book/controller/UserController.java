@@ -95,4 +95,22 @@ public class UserController {
         return new ResultMap().success().send();
     }
 
+
+    /**
+     * 获得用户详情
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    @GetMapping(value = "/userDetail")
+    public Map<String,Object> findUserById(@RequestParam String id) throws CloneNotSupportedException {
+
+        BaseResultDto userList = userService.findUserById(id);
+
+        return new ResultMap()
+                .success("data",userList)
+                .send();
+    }
+
+
+
 }

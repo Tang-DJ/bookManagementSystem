@@ -37,9 +37,6 @@
 </div>
 
 <script type="text/javascript">
-    //清除
-    var storage=window.localStorage;
-    storage.clear();
 
     var loginUrl = "/user/login";
     $(document).ready(function () {
@@ -61,16 +58,21 @@
                         "password": password
                     },
                     success: function (data) {
-                        console.log(data);
                         if(data.code == "0"){
-                            switch (roleId) {
-                                case "1" : window.location.href="./Background/index.html";break;
-                                case "2" : break;
-                                case "3" : window.location.href="./Foreground/main.html";break;
+
+                            sessionStorage["id"] = data.data.userList[0].id;
+
+                            if(data.data.userList[0].roleModel.id==roleId){
+                                switch (roleId) {
+                                    case "1" : window.location.href="./Background/index.html";break;
+                                    case "2" : break;
+                                    case "3" : window.location.href="./Foreground/main.html";break;
+                                }
                             }
+                            else alert("角色选择错误！");
                         }
                         else{
-                            alert("登录失败");
+                            alert(data.msg);
                         }
                     },
                     error: function () {

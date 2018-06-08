@@ -5,6 +5,7 @@ import org.nix.book.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
@@ -38,7 +39,7 @@ public class BookController {
     }
 
     /**
-     * 前台简易图书列表
+     * 前台最受欢迎图书列表
      * @return
      * @throws CloneNotSupportedException
      */
@@ -52,5 +53,29 @@ public class BookController {
                 .send();
     }
 
+    /**
+     * 出版时间排序
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    @GetMapping(value = "/simBookListOrderByCome")
+    public Map<String,Object> getSimpleBookListOderByComingUpTime() throws CloneNotSupportedException{
+
+        BaseResultDto bookList = bookService.getSimpleBookListOrderByComingUpTime();
+
+        return new ResultMap()
+                .success("data",bookList)
+                .send();
+    }
+
+    @GetMapping(value = "/bookDetail")
+    public Map<String,Object> findBookById(@RequestParam String id) throws CloneNotSupportedException{
+
+        BaseResultDto bookList = bookService.findBookById(id);
+
+        return new ResultMap()
+                .success("data",bookList)
+                .send();
+    }
 
 }

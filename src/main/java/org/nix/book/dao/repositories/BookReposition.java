@@ -13,7 +13,13 @@ public interface BookReposition extends JpaRepository<BookInfo,Integer> {
     List<BookInfo> findBookList();
 
     @Query(nativeQuery = true,
-            value = "SELECT id,book_name,come_up_time,publish_company FROM book_info ")
-    List<BookInfo> getSimpleBookList();
+            value = "SELECT * FROM book_info ORDER BY come_up_time DESC")
+    List<BookInfo> findBookListOrderByComeUpTime();
+
+    @Query(nativeQuery = true,
+            value = "SELECT * FROM book_info WHERE id = ?1")
+    List<BookInfo> findBookById(String id);
+
+
 
 }

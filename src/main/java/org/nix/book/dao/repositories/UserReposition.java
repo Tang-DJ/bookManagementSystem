@@ -25,7 +25,10 @@ public interface UserReposition extends JpaRepository<UserModel,Integer> {
     List<UserModel> Register(String userName);
 
     @Query(nativeQuery = true,
-            value = "DELETE  ")
-    List<UserModel> delUser(String userName);
+            value = "SELECT * FROM user_model WHERE id= ?1")
+    List<UserModel> findUserById(String id);
+
+
+
 
 }

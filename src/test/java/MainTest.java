@@ -26,7 +26,7 @@ public class MainTest {
     }
 
     @Test
-    public void userTest(){
+    public void userTest() {
         UserModel userModel = new UserModel();
         userModel.setUserName("faskfjkasj");
         userModel.setPassword("4564654654");
@@ -37,6 +37,8 @@ public class MainTest {
     private RoleService roleService;
     @Autowired
     private UserService userService;
+
+
 //    @Test
 //    public void userInfoTest() throws CloneNotSupportedException {
 //        UserInfoModel userInfoModel = new UserInfoModel();

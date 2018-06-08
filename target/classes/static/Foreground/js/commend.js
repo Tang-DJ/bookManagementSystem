@@ -10,7 +10,7 @@ $(function () {
             success:function (data) {
 
                 if(data.code==="0"){
-                    var len = 6;//data.data.bookInfos.length，现在设置为6
+                    var len = data.data.bookInfos.length;//data.data.bookInfos.length，现在设置为6
                     var temp = "";
                     for(var i=0;i<len;i++){
 
@@ -35,7 +35,7 @@ $(function () {
             dataType: "json",
             success:function (data) {
                 if(data.code==="0"){
-                    var len = 6;//data.data.bookInfos.length，现在设置为6
+                    var len = data.data.bookInfos.length;//data.data.bookInfos.length
                     var temp = "";
                     for(var i=0;i<len;i++){
 
