@@ -9,6 +9,8 @@ import org.nix.book.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.Map;
 
@@ -39,16 +41,22 @@ public class UserController {
      * 登录接口
      */
     @PostMapping(value = "/login")
-    public Map<String,Object> login(@RequestParam("userName")String userName,
+    public Map<String,Object> login(HttpServletRequest request,
+                                    @RequestParam("userName")String userName,
                                     @RequestParam("password")String password)throws CloneNotSupportedException{
 
         BaseResultDto userList = userService.login(userName,password);
 
         if (userList!=null){
+
+            HttpSession session = request.getSession();
+            session.setAttribute("currentUser", userList);
+
             return new ResultMap()
                     .success("data",userList)
                     .send();
         }
+
         return new ResultMap()
                 .fail("用户名或密码错误")
                 .send();

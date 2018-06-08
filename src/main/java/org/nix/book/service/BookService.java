@@ -24,6 +24,11 @@ public class BookService {
     @Autowired
     private BookReposition bookReposition;
 
+    /**
+     * 获得图书列表
+     * @return
+     * @throws CloneNotSupportedException
+     */
     public BaseResultDto findBookList() throws CloneNotSupportedException{
         List<BookInfo> bookInfoList = bookReposition.findBookList();
 
@@ -32,5 +37,16 @@ public class BookService {
         }
         return null;
     }
+
+    public BaseResultDto getSimpleBookList() throws CloneNotSupportedException{
+        List<BookInfo> bookInfoList = bookReposition.getSimpleBookList();
+
+        if (bookInfoList.size()>0){
+            return new BookDto(bookInfoList).result();
+        }
+        return null;
+    }
+
+
 
 }

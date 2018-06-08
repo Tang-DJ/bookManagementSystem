@@ -28,9 +28,24 @@ public class BookController {
      *  图书列表接口
      */
     @GetMapping(value = "/bookList")
-    public Map<String,Object> findUserListByUserName() throws CloneNotSupportedException {
+    public Map<String,Object> findUserList() throws CloneNotSupportedException {
 
         BaseResultDto bookList = bookService.findBookList();
+
+        return new ResultMap()
+                .success("data",bookList)
+                .send();
+    }
+
+    /**
+     * 前台简易图书列表
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    @GetMapping(value = "/simBookList")
+    public Map<String,Object> getSimpleBookList() throws CloneNotSupportedException{
+
+        BaseResultDto bookList = bookService.getSimpleBookList();
 
         return new ResultMap()
                 .success("data",bookList)

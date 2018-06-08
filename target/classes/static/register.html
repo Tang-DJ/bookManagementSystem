@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>注册</title>
     <script src="./resource/js/jquery.min.js"></script>
+    <script src="./resource/js/md5.js"></script>
     <link href="./loginStyle.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
@@ -41,7 +42,11 @@
             var email = $("#email").val();
             var phoneNum = $("#phone_number").val();
 
+
+
             if(password == againPass){
+                password= hex_md5(password);//md5加密
+
                 if( name != null && name != "" &&
                     password != null  && password != "" &&
                     againPass != null && againPass != "" &&
