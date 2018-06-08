@@ -92,7 +92,7 @@ public class UserController {
                     .send();
         }
 
-        return new ResultMap().success().send();
+        return new ResultMap().success("注册成功").send();
     }
 
 

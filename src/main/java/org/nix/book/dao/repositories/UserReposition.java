@@ -1,5 +1,6 @@
 package org.nix.book.dao.repositories;
 
+import org.nix.book.model.UserInfoModel;
 import org.nix.book.model.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -28,7 +29,9 @@ public interface UserReposition extends JpaRepository<UserModel,Integer> {
             value = "SELECT * FROM user_model WHERE id= ?1")
     List<UserModel> findUserById(String id);
 
-
+    @Query(nativeQuery = true,
+            value = "SELECT * FROM user_model WHERE id= ?1")
+    UserModel findUserById1(String id);
 
 
 }

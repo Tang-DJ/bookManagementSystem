@@ -111,5 +111,57 @@
                  </div>
 			</div>
 
+
+	<div class="modal " id="booModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">修改</h4>
+				</div>
+				<div class="modal-body">
+
+					<div class="form-group">
+						<label for="bookName">书名</label>
+						<input type="text" name="bookName" data-bind="value:bookName" class="form-control" id="bookName" placeholder="书名">
+					</div>
+					<div class="form-group">
+						<label for="author">作者</label>
+						<input type="text" name="author" data-bind="value:author" class="form-control" id="author" placeholder="作者">
+					</div>
+					<div class="form-group">
+						<label for="ISBN">ISBN</label>
+						<input type="text" name="ISBN" data-bind="value:ISBN" class="form-control" id="ISBN" placeholder="ISBN">
+					</div>
+					<div class="form-group">
+						<label for="price">单价</label>
+						<input type="text" name="price" data-bind="value:price" class="form-control" id="price" placeholder="单价">
+					</div>
+					<div class="form-group">
+						<label for="publishCompany">出版社</label>
+						<input type="text" name="publishCompany" data-bind="value:publishCompany" class="form-control" id="publishCompany" placeholder="出版社">
+					</div>
+                    <div class="form-group">
+                        <label for="state">状态</label>
+                        <input type="text" name="state" data-bind="value:state" class="form-control" id="state" placeholder="状态（0为借出，1为在库）">
+                    </div>
+                    <div class="form-group">
+                        <label for="translator">译者</label>
+                        <input type="text" name="translator" data-bind="value:translator" class="form-control" id="translator" placeholder="译者">
+                    </div>
+                    <div class="form-group">
+                        <label for="comeUpTime">出版日期</label>
+                        <input type="date" name="comeUpTime" data-bind="value:comeUpTime" class="form-control" id="comeUpTime" placeholder="译者">
+                    </div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+					<button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>

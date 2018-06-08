@@ -17,7 +17,6 @@ public class RecordsDto extends AbstractResultDto {
 
     private List<BorrowRecords> borrowRecords;
 
-
     public RecordsDto(List<BorrowRecords> borrowRecords) {
         this.borrowRecords = borrowRecords;
     }

@@ -3,6 +3,7 @@ package org.nix.book.service;
 import org.nix.book.dao.repositories.UserReposition;
 import org.nix.book.dto.UserDto;
 import org.nix.book.dto.base.BaseResultDto;
+import org.nix.book.model.UserInfoModel;
 import org.nix.book.model.UserModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -96,4 +97,40 @@ public class UserService {
         }
         return null;
     }
+
+
+    /**
+     * 重写用户详情
+     * @param id
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    public BaseResultDto findUserById1(String id) throws CloneNotSupportedException{
+
+        UserModel userModel = userReposition.findUserById1(id);
+        if (userModel!=null){
+            return new UserDto(userModel).result();
+        }
+        return null;
+    }
+
+    /**
+     * 借还书状态修改
+     * @param id
+     * @param num
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    public UserModel changeUserLendedNum(String id,Integer num) throws CloneNotSupportedException{
+
+        UserModel userModel = userReposition.findUserById1(id);
+        UserInfoModel userInfoModel = userModel.getUserInfoModel();
+        Integer lendNum = userInfoModel.getLendedNum();
+        userInfoModel.setLendedNum(lendNum+num);
+
+        userReposition.saveAndFlush(userModel);
+        return userModel;
+    }
+
+
 }

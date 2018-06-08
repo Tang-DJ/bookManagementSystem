@@ -51,8 +51,10 @@ $(function () {
 
                     $("#bookAuthor").text(data.data.bookInfos[0].author);
                     var state;
-                    if(data.data.bookInfos[0].state=="0")
+                    if(data.data.bookInfos[0].state=="0"){
+                        $("#rent").attr("disabled",true);
                         state="借出";
+                    }
                     else state = "在库";
 
                     var temp = "<p>ISBN:" + data.data.bookInfos[0].iSBNCode + "</p>"+
@@ -62,13 +64,34 @@ $(function () {
                                "<p>租借状态:" + state + "</p>";
 
                     $("#bookDetail").append(temp);
-
-
                 }
                 else    alert(data.msg);
 
             }
         });
+
+
+        //借书请求
+        $("#rent").click(function () {
+
+            var userId = sessionStorage['id'];
+            $.ajax({
+                type:"POST",
+                url:"/book/lendBook",
+                data: {
+                    id:id,
+                    userId:userId
+                },
+                async:true,
+                dataType: "json",
+                success:function (data) {
+                    alert(data.msg);
+                    location.reload();
+                }
+            });
+
+        })
+
 
     }
 

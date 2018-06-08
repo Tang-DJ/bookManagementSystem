@@ -8,6 +8,110 @@ $(function () {
     var oButtonInit = new ButtonInit();
     oButtonInit.Init();
 
+    //删除
+    $("#btn_delete").click(function (){
+        var temp= $("#bookTable").bootstrapTable('getSelections');
+        if(temp.length<=0) {
+            alert("请至少选中一行")
+        } else {
+            var content = "";
+            for(var i=0;i<temp.length;i++){
+                content += "ids="+temp[i].id+"&";
+            }
+            $.ajax({
+                type: "DELETE",
+                url: "/book/delBooks?"+ content,
+                dataType: "json",
+                success: function(data) {
+                    if(data.code==="0") {
+                        alert(data.msg);
+                        window.location.reload();
+                    }
+                    else{
+                        alert(data.msg);
+                    }
+                },
+                error: function() {
+                    alert("连接失败");
+                }
+            });
+        }
+    });
+
+    //修改
+    $("#btn_edit").click(function(){
+        var temp= $("#bookTable").bootstrapTable('getSelections');
+        if(temp.length<=0){
+            alert("请至少选中一行");
+        }else if(temp.length==1){
+
+            $("#booModal").modal({show:true});
+
+            //初始化
+            var bookName =  $("#bookName");
+            var author = $("#author");
+            var ISBN = $("#ISBN");
+            var price = $("#price");
+            var publishCompany = $("#publishCompany");
+            var state = $("#state");
+            var translator = $("#translator");
+            var comeUpTime = $("#comeUpTime");
+
+            bookName.val(temp[0].bookName);
+            author.val(temp[0].author);
+            ISBN.val(temp[0].iSBNCode);
+            price.val(temp[0].price);
+            publishCompany.val(temp[0].publishCompany);
+            state.val(temp[0].state);
+            translator.val(temp[0].translator);
+
+            function timestampToTime(timestamp) {
+                var date = new Date(timestamp * 1000);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+                Y = date.getFullYear() + '-';
+                M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+                D = date.getDate() + ' ';
+                h = date.getHours() + ':';
+                m = date.getMinutes() + ':';
+                s = date.getSeconds();
+                return Y+M+D+h+m+s;
+            }
+
+            comeUpTime.val(timestampToTime(temp[0].comeUpTime));
+
+            //提交
+            $("#btn_submit").click(function () {
+                $.ajax({
+                    type: "PUT",
+                    url: '/book/updateBook',
+                    data: {
+                        "id":temp[0].id,
+                        "bookName": bookName.val(),
+                        "author": author.val(),
+                        "translator": translator.val(),
+                        "price": price.val(),
+                        "ISBNCode": ISBN.val(),
+                        "comeUpTime": comeUpTime.val(),
+                        "state":  state.val(),
+                        "publishCompany":  publishCompany.val()
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        alert(data.msg);
+                        $("#booModal").modal({show: false});
+                        window.location.reload();
+                    },
+                    error: function () {
+                        alert("连接失败");
+                        $("#booModal").modal({show: false});
+                    }
+                });
+
+            });
+        }else{
+            alert('最多只能选择一行');
+        }
+    });
+
 });
 
 var TableInit = function () {
@@ -58,7 +162,7 @@ var TableInit = function () {
                 title: '作者'
             }, {
                 field: 'iSBNCode',
-                title: 'iSBN'
+                title: 'ISBN'
             }, {
                 field: 'price',
                 title: '单价'
@@ -79,7 +183,7 @@ var TableInit = function () {
                 field: 'translator',
                 title: '译者'
             }, {
-                field: 'createDate',
+                field: 'comeUpTime',
                 title: '出版日期',
                 formatter: function (value, row, index) {
                     var unixTimestamp = new Date(value) ;

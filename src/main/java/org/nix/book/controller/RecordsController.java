@@ -38,4 +38,18 @@ public class RecordsController {
     }
 
 
+    /**
+     * 根据用户id获取借阅记录
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    @GetMapping(value = "/userRecords")
+    public Map<String,Object> findBorrowRecordsByUserId(@RequestParam String id) throws CloneNotSupportedException {
+
+        BaseResultDto recordsList = recordsService.findBorrowRecordsByUserId(id);
+
+        return new ResultMap()
+                .success("data",recordsList)
+                .send();
+    }
 }

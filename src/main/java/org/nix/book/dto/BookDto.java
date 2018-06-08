@@ -17,8 +17,14 @@ public class BookDto extends AbstractResultDto {
 
     private List<BookInfo> bookInfos;
 
+    private BookInfo bookInfo;
+
     public BookDto(List<BookInfo> bookInfos) {
         this.bookInfos = bookInfos;
+    }
+
+    public BookDto(BookInfo bookInfo){
+        this.bookInfo = bookInfo;
     }
 
     @Override
@@ -32,5 +38,13 @@ public class BookDto extends AbstractResultDto {
 
     public void setBookInfos(List<BookInfo> bookInfos) {
         this.bookInfos = bookInfos;
+    }
+
+    public BookInfo getBookInfo() {
+        return bookInfo;
+    }
+
+    public void setBookInfo(BookInfo bookInfo) {
+        this.bookInfo = bookInfo;
     }
 }

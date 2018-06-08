@@ -20,6 +20,9 @@ public interface BookReposition extends JpaRepository<BookInfo,Integer> {
             value = "SELECT * FROM book_info WHERE id = ?1")
     List<BookInfo> findBookById(String id);
 
+    @Query(nativeQuery = true,
+            value = "SELECT * FROM book_info WHERE id = ?1")
+    BookInfo findBookById1(String id);
 
 
 }
