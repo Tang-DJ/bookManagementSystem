@@ -4,6 +4,7 @@ import org.nix.book.dto.base.AbstractResultDto;
 import org.nix.book.model.BorrowRecords;
 import org.nix.book.model.UserModel;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -24,7 +25,11 @@ public class RecordsDto extends AbstractResultDto {
     @Override
     public void handler() throws CloneNotSupportedException {
         for (BorrowRecords model:borrowRecords) {
-            model.setBorrowTime(null);
+            if(model.getReturnTime()==null){
+                Date date = new Date(0);
+                model.setReturnTime(date);
+            }
+
         }
     }
 
