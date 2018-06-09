@@ -51,7 +51,7 @@ $(function () {
                         var re;
 
                         if(data.data.borrowRecords[i].returnTime==0){
-                            btn = "<button class='btn btn-info' value='"+ data.data.borrowRecords[i].id +"'>归还</button>"
+                            btn = "<button class='btn btn-info' onclick='backBook("+ data.data.borrowRecords[i].id  +")' >归还</button>"
                             re="";
                         }
                         else{
@@ -74,6 +74,9 @@ $(function () {
                 }
                 else    alert(data.msg);
             }
+
+
+
         });
 
     }
@@ -81,3 +84,21 @@ $(function () {
 
 
 });
+
+function backBook(id) {
+    $.ajax({
+        type:"POST",
+        url:"/book/backBook",
+        async:true,
+        data:{
+            id:id
+        },
+        dataType: "json",
+        success:function (data) {
+          alert(data.msg);
+          window.location.reload();
+        }
+    });
+
+
+}

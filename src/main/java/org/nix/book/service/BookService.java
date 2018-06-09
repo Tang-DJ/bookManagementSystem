@@ -3,17 +3,13 @@ package org.nix.book.service;
 import org.nix.book.dao.repositories.BookReposition;
 import org.nix.book.dao.repositories.RecordsReposition;
 import org.nix.book.dto.BookDto;
-import org.nix.book.dto.RecordsDto;
 import org.nix.book.dto.SimpleBookDto;
 import org.nix.book.dto.base.BaseResultDto;
 import org.nix.book.model.BookInfo;
-import org.nix.book.model.BorrowRecords;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
-import static java.lang.Integer.parseInt;
 
 /**
  * @program: bookmanager
@@ -144,7 +140,9 @@ public class BookService {
      * @throws CloneNotSupportedException
      */
     public boolean delBookById(Integer id) throws CloneNotSupportedException{
-        bookReposition.deleteById(id);
+        BookInfo bookInfo = bookReposition.findBookById1(id.toString());
+        bookInfo.setEnteringMen(null);
+        bookReposition.delete(bookInfo);
         return true;
     }
 
@@ -156,7 +154,9 @@ public class BookService {
      */
     public boolean delBookByIds(Integer[] ids) throws CloneNotSupportedException{
         for(int i = 0;i<ids.length;i++){
-            bookReposition.deleteById(ids[i]);
+            BookInfo bookInfo = bookReposition.findBookById1(ids[i].toString());
+            bookInfo.setEnteringMen(null);
+            bookReposition.delete(bookInfo);
         }
         return true;
     }
@@ -183,4 +183,10 @@ public class BookService {
         bookReposition.saveAndFlush(bookInfo1);
         return true;
     }
+
+    public boolean addBook(BookInfo bookInfo) throws CloneNotSupportedException{
+
+        return true;
+    }
+
 }

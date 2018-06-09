@@ -5,13 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7abd489a-d505-4bc3-8329-6a56b43e8525" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/CloneTools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/dto/RecordsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/dto/RecordsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Background/records.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Background/records.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Background/role.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Background/role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Foreground/commend.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/commend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Foreground/home-categories-description.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/records.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/js/records.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Foreground/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Foreground/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/personal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/Foreground/records.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/records.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/dto/RecordsDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/dto/RecordsDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Foreground/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Foreground/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nix/book/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/nix/book/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/Background/role.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/Background/role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/Foreground/commend.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/Foreground/commend.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/Foreground/js/records.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/Foreground/js/records.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/Foreground/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/Foreground/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/Foreground/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/Foreground/personal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/Foreground/records.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/Foreground/records.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/Foreground/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/Foreground/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/register.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +47,8 @@
       <file leaf-file-name="BookController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="209" column="21" selection-start-line="209" selection-start-column="21" selection-end-line="209" selection-end-column="21" />
+            <state relative-caret-position="311">
+              <caret line="220" column="30" selection-start-line="220" selection-start-column="20" selection-end-line="220" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,29 +56,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecordsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/RecordsController.java">
+      <file leaf-file-name="BookService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/BookService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="records.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/js/records.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="records.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/records.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3885">
-              <caret line="185" column="58" selection-start-line="185" selection-start-column="58" selection-end-line="185" selection-end-column="58" />
+            <state relative-caret-position="395">
+              <caret line="188" column="20" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,26 +71,35 @@
       <file leaf-file-name="RecordsDto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dto/RecordsDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
+            <state relative-caret-position="370">
               <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/js/main.js">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="28" column="11" selection-start-line="4" selection-start-column="7" selection-end-line="28" selection-end-column="11" />
+            <state relative-caret-position="269">
+              <caret line="118" column="7" lean-forward="true" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/js/personal.js">
+      <file leaf-file-name="book.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/js/book.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+            <state relative-caret-position="717">
+              <caret line="135" column="30" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="173" column="31" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -93,16 +108,25 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/RecordsReposition.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="single.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/js/single.js">
+      <file leaf-file-name="records.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/records.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1596">
-              <caret line="76" column="46" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="46" />
+            <state relative-caret-position="63">
+              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CloneTools.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/CloneTools.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -110,8 +134,8 @@
       <file leaf-file-name="RecordsService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/RecordsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1491">
-              <caret line="78" column="50" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="50" />
+            <state relative-caret-position="-391">
+              <caret line="21" column="48" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="21" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,7 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/controller/ResultMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/model/UserModel.java" />
         <option value="$PROJECT_DIR$/src/main/web/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/RoleReposition.java" />
@@ -168,42 +191,43 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Background/js/records.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Background/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/Background/records.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/Background/role.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Background/user.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/contact.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/register.html" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/model/SimpleBookModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dao/book/BookDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/MainTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dto/SimpleBookDto.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/js/common.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/main.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/js/commend.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/commend.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/loginStyle.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/personal.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/js/personal.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/single.html" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dto/BookDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dto/UserDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/UserReposition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/js/single.js" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/BookReposition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/service/BookService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Background/book.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Background/js/book.js" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/controller/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/RecordsReposition.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/service/RecordsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/controller/RecordsController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/records.html" />
         <option value="$PROJECT_DIR$/src/main/java/org/nix/book/dto/RecordsDto.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/js/records.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/single.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/main.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/personal.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/records.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Foreground/commend.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/register.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Background/role.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/CloneTools.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/Background/records.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/controller/BookController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nix/book/service/BookService.java" />
       </list>
     </option>
   </component>
@@ -391,17 +415,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="Foreground" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bookmanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bookmanager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="Foreground" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="Background" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bookmanager" type="b2602c69:ProjectViewProjectNode" />
@@ -456,11 +470,11 @@
       <recent name="org.nix.book.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Volumes\Data\study\bookmanager\src\main\java\org\nix\book" />
       <recent name="D:\Volumes\Data\study\bookmanager\src\main\resources\static" />
       <recent name="D:\Volumes\Data\study\bookmanager\src\main" />
       <recent name="D:\Volumes\Data\study\bookmanage\src\main\java\org\nix\book\dto" />
       <recent name="D:\Volumes\Data\study\bookmanage\src\main\resources" />
-      <recent name="D:\Volumes\Data\study\bookmanage\src\main\java\org\nix\book" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -637,7 +651,7 @@
       <workItem from="1528438646658" duration="29006000" />
       <workItem from="1528476704423" duration="11821000" />
       <workItem from="1528512019134" duration="2701000" />
-      <workItem from="1528514822212" duration="2992000" />
+      <workItem from="1528514822212" duration="9307000" />
     </task>
     <servers />
   </component>
@@ -674,7 +688,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131671000" />
+    <option name="totallyTimeSpent" value="137986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -692,13 +706,13 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34599155" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.0" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.1209564" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13220815" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31504923" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2124665" />
@@ -768,42 +782,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dto/RecordsDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/records.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/role.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/js/custom.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/resource/js/md5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -862,13 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="285" column="12" lean-forward="true" selection-start-line="285" selection-start-column="12" selection-end-line="285" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/loginStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
@@ -887,34 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12">
           <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/personal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="79" column="81" selection-start-line="79" selection-start-column="81" selection-end-line="79" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/commend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="78" column="74" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="119" column="95" selection-start-line="119" selection-start-column="83" selection-end-line="119" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="78" column="42" lean-forward="true" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -943,6 +887,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -950,6 +897,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -974,27 +926,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="132" column="5" lean-forward="true" selection-start-line="132" selection-start-column="5" selection-end-line="132" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/BookReposition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="170" column="38" lean-forward="true" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1012,13 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="110" column="24" lean-forward="true" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/model/BookInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -1026,34 +954,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/js/book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1932">
-          <caret line="92" column="24" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/model/BorrowRecords.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/RecordsReposition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/RecordsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1491">
-          <caret line="78" column="50" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1078,13 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/records.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3885">
-          <caret line="185" column="58" selection-start-line="185" selection-start-column="58" selection-end-line="185" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/RecordsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
@@ -1092,27 +989,152 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/BookController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/js/records.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="96" column="33" lean-forward="true" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/single.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="209" column="21" selection-start-line="209" selection-start-column="21" selection-end-line="209" selection-end-column="21" />
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="48" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/personal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="51" column="75" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/records.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="47" column="75" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="285" column="12" lean-forward="true" selection-start-line="285" selection-start-column="12" selection-end-line="285" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/commend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="51" column="75" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="56" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1249">
+          <caret line="71" column="46" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/role.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/253141924/FileRecv/CloneTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/CloneTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dto/RecordsDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/RecordsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="21" column="48" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="21" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dto/RecordsDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/records.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="63">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Foreground/js/records.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/dao/repositories/RecordsReposition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="173" column="31" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
-          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+          <caret line="118" column="7" lean-forward="true" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/Background/js/book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="135" column="30" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="220" column="30" selection-start-line="220" selection-start-column="20" selection-end-line="220" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nix/book/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="188" column="20" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

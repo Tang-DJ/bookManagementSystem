@@ -111,6 +111,20 @@ public class UserController {
                 .send();
     }
 
+    /**
+     * 删除用户
+     * @param ids
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    @DeleteMapping(value = "delUsers")
+    public Map<String,Object> delUser(@RequestParam Integer[] ids) throws CloneNotSupportedException {
+
+        userService.delUserByIds(ids);
+
+        return new ResultMap().success("删除成功").send();
+    }
+
 
 
 }

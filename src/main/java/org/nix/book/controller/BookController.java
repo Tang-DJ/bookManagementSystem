@@ -148,6 +148,7 @@ public class BookController {
      * @return
      * @throws CloneNotSupportedException
      */
+    @PostMapping(value = "backBook")
     public Map<String,Object> backBook(@RequestParam String id) throws CloneNotSupportedException{
 
         BorrowRecords borrowRecords = recordsService.findBorrowRecordsById(id);
@@ -179,7 +180,6 @@ public class BookController {
      */
     @DeleteMapping(value = "/delBook")
     public Map<String,Object> delBookById(@RequestParam Integer id) throws CloneNotSupportedException{
-
         bookService.delBookById(id);
         return new ResultMap().success("删除成功").send();
     }
@@ -209,6 +209,19 @@ public class BookController {
         bookService.updateBook(bookInfo);
         return new ResultMap().success("修改成功").send();
     }
+
+    /**
+     * 添加图书
+     * @param bookInfo
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    @PutMapping(value = "/addBook")
+    public Map<String,Object> addBook(@RequestParam BookInfo bookInfo) throws CloneNotSupportedException{
+        bookService.updateBook(bookInfo);
+        return new ResultMap().success("修改成功").send();
+    }
+
 
 
 

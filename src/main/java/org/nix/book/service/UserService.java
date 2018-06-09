@@ -1,13 +1,17 @@
 package org.nix.book.service;
 
+import org.nix.book.dao.repositories.RecordsReposition;
 import org.nix.book.dao.repositories.UserReposition;
 import org.nix.book.dto.UserDto;
 import org.nix.book.dto.base.BaseResultDto;
+import org.nix.book.model.BookInfo;
+import org.nix.book.model.BorrowRecords;
 import org.nix.book.model.UserInfoModel;
 import org.nix.book.model.UserModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.management.Query;
 import java.util.List;
 
 /**
@@ -22,6 +26,9 @@ public class UserService {
 
     @Autowired
     private UserReposition userReposition;
+
+    @Autowired
+    private RecordsReposition recordsReposition;
 
     /**
      * 获得user列表
@@ -131,6 +138,61 @@ public class UserService {
         userReposition.saveAndFlush(userModel);
         return userModel;
     }
+
+    /**
+     * 删除单个用户
+     * @param id
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    public boolean delUserById(Integer id) throws CloneNotSupportedException{
+        UserModel userModel = userReposition.findUserById1(id.toString());
+
+        userModel.setRoleModel(null);
+
+        userReposition.delete(userModel);
+
+        List<BorrowRecords> borrowRecordsList = recordsReposition.findBorrowRecordsByUserId(id.toString());
+
+        for(BorrowRecords model : borrowRecordsList){
+            model.setBookInfo(null);
+            model.setUserModel(null);
+        }
+
+        recordsReposition.deleteAll(borrowRecordsList);
+
+        return true;
+
+    }
+
+    /**
+     * 删除多个用户
+     * @param ids
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    public boolean delUserByIds(Integer[] ids) throws CloneNotSupportedException{
+
+        for(int i =0;i<ids.length;i++){
+            UserModel userModel = userReposition.findUserById1(ids[i].toString());
+
+            userModel.setRoleModel(null);
+
+            userReposition.delete(userModel);
+
+            List<BorrowRecords> borrowRecordsList = recordsReposition.findBorrowRecordsByUserId(ids[i].toString());
+
+            for(BorrowRecords model : borrowRecordsList){
+                model.setBookInfo(null);
+                model.setUserModel(null);
+            }
+            recordsReposition.deleteAll(borrowRecordsList);
+        }
+        return true;
+
+
+    }
+
 
 
 }
