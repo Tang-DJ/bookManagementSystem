@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
 import java.util.Map;
 
 /**
@@ -28,7 +29,7 @@ public class RecordsController {
      *  借阅记录接口
      */
     @GetMapping(value = "/recordsList")
-    public Map<String,Object> findRecordsList() throws CloneNotSupportedException {
+    public Map<String,Object> findRecordsList() throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         BaseResultDto recordsList = recordsService.findRecordsList();
 
@@ -44,7 +45,7 @@ public class RecordsController {
      * @throws CloneNotSupportedException
      */
     @GetMapping(value = "/userRecords")
-    public Map<String,Object> findBorrowRecordsByUserId(@RequestParam String id) throws CloneNotSupportedException {
+    public Map<String,Object> findBorrowRecordsByUserId(@RequestParam String id) throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         BaseResultDto recordsList = recordsService.findBorrowRecordsByUserId(id);
 

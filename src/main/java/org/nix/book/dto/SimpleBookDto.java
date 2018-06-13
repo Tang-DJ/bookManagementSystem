@@ -1,7 +1,5 @@
 package org.nix.book.dto;
 
-import jdk.nashorn.internal.runtime.Undefined;
-import org.nix.book.dto.base.AbstractResultDto;
 import org.nix.book.model.BookInfo;
 import org.nix.book.model.UserModel;
 
@@ -14,7 +12,7 @@ import java.util.List;
  * @create: 2018-06-08 16:35
  **/
 
-public class SimpleBookDto extends AbstractResultDto {
+public class SimpleBookDto extends org.nix.bookservice.dto.base.AbstractResultDto {
 
     private List<BookInfo> bookInfos;
 

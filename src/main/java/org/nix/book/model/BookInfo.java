@@ -1,9 +1,12 @@
 package org.nix.book.model;
 
 import org.hibernate.validator.constraints.Length;
+import org.nix.book.CloneTools;
 import org.nix.book.model.base.BaseModel;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import java.io.IOException;
 import java.util.Date;
 import java.util.Objects;
 
@@ -89,6 +92,7 @@ public class BookInfo extends BaseModel {
     }
 
     @Column(name = "comeUpTime", length = 19, nullable = false)
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.TIMESTAMP)
     public Date getComeUpTime() {
         return comeUpTime;
@@ -195,4 +199,6 @@ public class BookInfo extends BaseModel {
                 ", enteringDate=" + enteringDate +
                 '}';
     }
+
+
 }

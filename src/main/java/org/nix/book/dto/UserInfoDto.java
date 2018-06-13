@@ -1,6 +1,5 @@
 package org.nix.book.dto;
 
-import org.nix.book.dto.base.AbstractResultDto;
 import org.nix.book.model.UserInfoModel;
 
 import java.util.List;
@@ -12,7 +11,7 @@ import java.util.List;
  * @create: 2018-06-07 17:57
  **/
 
-public class UserInfoDto extends AbstractResultDto {
+public class UserInfoDto extends org.nix.bookservice.dto.base.AbstractResultDto {
 
     private List<UserInfoModel> userInfoDtos;
 

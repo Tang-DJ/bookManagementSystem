@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
 import java.util.Date;
 import java.util.Map;
 
@@ -28,7 +29,7 @@ public class UserController {
      *  用户列表接口
      */
     @GetMapping(value = "/userList")
-    public Map<String,Object> findUserListByUserName() throws CloneNotSupportedException {
+    public Map<String,Object> findUserListByUserName() throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         BaseResultDto userList = userService.findUserModelList();
 
@@ -43,7 +44,7 @@ public class UserController {
     @PostMapping(value = "/login")
     public Map<String,Object> login(HttpServletRequest request,
                                     @RequestParam("userName")String userName,
-                                    @RequestParam("password")String password)throws CloneNotSupportedException{
+                                    @RequestParam("password")String password) throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         BaseResultDto userList = userService.login(userName,password);
 
@@ -102,7 +103,7 @@ public class UserController {
      * @throws CloneNotSupportedException
      */
     @GetMapping(value = "/userDetail")
-    public Map<String,Object> findUserById(@RequestParam String id) throws CloneNotSupportedException {
+    public Map<String,Object> findUserById(@RequestParam String id) throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         BaseResultDto userList = userService.findUserById(id);
 
@@ -117,7 +118,7 @@ public class UserController {
      * @return
      * @throws CloneNotSupportedException
      */
-    @DeleteMapping(value = "delUsers")
+    @DeleteMapping(value = "/delUsers")
     public Map<String,Object> delUser(@RequestParam Integer[] ids) throws CloneNotSupportedException {
 
         userService.delUserByIds(ids);
@@ -125,6 +126,23 @@ public class UserController {
         return new ResultMap().success("删除成功").send();
     }
 
+    /**
+     * 更新用户
+     * @param userModel
+     * @param userInfoModel
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    @PostMapping(value = "/updateUser")
+    public Map<String,Object> updateUser(@RequestParam String userId,
+                                         @ModelAttribute("UserModel")UserModel userModel,
+                                         @ModelAttribute("UserInfoModel")UserInfoModel userInfoModel) throws CloneNotSupportedException {
+
+        userModel.setUserInfoModel(userInfoModel);
+        userService.updateUserById(userId,userModel);
+
+        return new ResultMap().success("更新成功").send();
+    }
 
 
 }

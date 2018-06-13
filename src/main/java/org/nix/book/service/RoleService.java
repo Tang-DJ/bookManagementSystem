@@ -9,6 +9,7 @@ import org.nix.book.model.UserModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -29,7 +30,7 @@ public class RoleService {
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto findRoleList() throws CloneNotSupportedException{
+    public BaseResultDto findRoleList() throws CloneNotSupportedException, IOException, ClassNotFoundException {
         List<RoleModel> roleModels = roleReposition.findRoleList();
 
         if (roleModels.size()>0){

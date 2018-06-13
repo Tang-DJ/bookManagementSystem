@@ -11,6 +11,7 @@ import org.nix.book.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
@@ -43,7 +44,7 @@ public class BookController {
      *  图书列表接口
      */
     @GetMapping(value = "/bookList")
-    public Map<String,Object> findUserList() throws CloneNotSupportedException {
+    public Map<String,Object> findUserList() throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         BaseResultDto bookList = bookService.findBookList();
 
@@ -58,7 +59,7 @@ public class BookController {
      * @throws CloneNotSupportedException
      */
     @GetMapping(value = "/simBookList")
-    public Map<String,Object> getSimpleBookList() throws CloneNotSupportedException{
+    public Map<String,Object> getSimpleBookList() throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         BaseResultDto bookList = bookService.getSimpleBookList();
 
@@ -73,7 +74,7 @@ public class BookController {
      * @throws CloneNotSupportedException
      */
     @GetMapping(value = "/simBookListOrderByCome")
-    public Map<String,Object> getSimpleBookListOderByComingUpTime() throws CloneNotSupportedException{
+    public Map<String,Object> getSimpleBookListOderByComingUpTime() throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         BaseResultDto bookList = bookService.getSimpleBookListOrderByComingUpTime();
 
@@ -89,7 +90,7 @@ public class BookController {
      * @throws CloneNotSupportedException
      */
     @GetMapping(value = "/bookDetail")
-    public Map<String,Object> findBookById(@RequestParam String id) throws CloneNotSupportedException{
+    public Map<String,Object> findBookById(@RequestParam String id) throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         BaseResultDto bookList = bookService.findBookById(id);
 
@@ -203,9 +204,8 @@ public class BookController {
      * @return
      * @throws CloneNotSupportedException
      */
-    @PutMapping(value = "/updateBook")
-    public Map<String,Object> updateBook(@RequestParam String id,
-                                        @RequestParam BookInfo bookInfo) throws CloneNotSupportedException{
+    @PostMapping(value = "/updateBook")
+    public Map<String,Object> updateBook( @ModelAttribute("BookInfo") BookInfo bookInfo) throws CloneNotSupportedException{
         bookService.updateBook(bookInfo);
         return new ResultMap().success("修改成功").send();
     }
@@ -217,9 +217,10 @@ public class BookController {
      * @throws CloneNotSupportedException
      */
     @PutMapping(value = "/addBook")
-    public Map<String,Object> addBook(@RequestParam BookInfo bookInfo) throws CloneNotSupportedException{
-        bookService.updateBook(bookInfo);
-        return new ResultMap().success("修改成功").send();
+    public Map<String,Object> addBook(@RequestParam String userId,
+                                      @ModelAttribute("BookInfo") BookInfo bookInfo) throws CloneNotSupportedException{
+        bookService.addBook(userId,bookInfo);
+        return new ResultMap().success("增加成功").send();
     }
 
 

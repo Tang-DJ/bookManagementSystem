@@ -7,6 +7,7 @@ import org.nix.book.model.BorrowRecords;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -26,7 +27,7 @@ public class RecordsService {
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto findRecordsList() throws CloneNotSupportedException{
+    public BaseResultDto findRecordsList() throws CloneNotSupportedException, IOException, ClassNotFoundException {
         List<BorrowRecords> borrowRecords = recordsReposition.findRecordsList();
 
         System.out.println(borrowRecords);
@@ -76,7 +77,7 @@ public class RecordsService {
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto findBorrowRecordsByUserId(String id) throws CloneNotSupportedException{
+    public BaseResultDto findBorrowRecordsByUserId(String id) throws CloneNotSupportedException, IOException, ClassNotFoundException {
         List<BorrowRecords> borrowRecords = recordsReposition.findBorrowRecordsByUserId(id);
 
         System.out.println(borrowRecords);

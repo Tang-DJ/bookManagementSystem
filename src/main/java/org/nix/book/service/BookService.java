@@ -2,13 +2,17 @@ package org.nix.book.service;
 
 import org.nix.book.dao.repositories.BookReposition;
 import org.nix.book.dao.repositories.RecordsReposition;
+import org.nix.book.dao.repositories.UserReposition;
 import org.nix.book.dto.BookDto;
 import org.nix.book.dto.SimpleBookDto;
 import org.nix.book.dto.base.BaseResultDto;
 import org.nix.book.model.BookInfo;
+import org.nix.book.model.UserModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -25,13 +29,13 @@ public class BookService {
     private BookReposition bookReposition;
 
     @Autowired
-    private RecordsReposition recordsReposition;
+    private UserReposition userReposition;
     /**
      * 获得图书列表
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto findBookList() throws CloneNotSupportedException{
+    public BaseResultDto findBookList() throws CloneNotSupportedException, IOException, ClassNotFoundException {
         List<BookInfo> bookInfoList = bookReposition.findBookList();
 
         if (bookInfoList.size()>0){
@@ -45,7 +49,7 @@ public class BookService {
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto getSimpleBookList() throws CloneNotSupportedException{
+    public BaseResultDto getSimpleBookList() throws CloneNotSupportedException, IOException, ClassNotFoundException {
         List<BookInfo> bookInfoList = bookReposition.findBookList();
 
         if (bookInfoList.size()>0){
@@ -59,7 +63,7 @@ public class BookService {
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto getSimpleBookListOrderByComingUpTime() throws CloneNotSupportedException{
+    public BaseResultDto getSimpleBookListOrderByComingUpTime() throws CloneNotSupportedException, IOException, ClassNotFoundException {
         List<BookInfo> bookInfoList = bookReposition.findBookListOrderByComeUpTime();
 
         if (bookInfoList.size()>0){
@@ -74,7 +78,7 @@ public class BookService {
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto findBookById(String id) throws CloneNotSupportedException{
+    public BaseResultDto findBookById(String id) throws CloneNotSupportedException, IOException, ClassNotFoundException {
         List<BookInfo> bookInfoList = bookReposition.findBookById(id);
 
         if (bookInfoList.size()>0){
@@ -90,7 +94,7 @@ public class BookService {
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto findBookById1(String id) throws CloneNotSupportedException{
+    public BaseResultDto findBookById1(String id) throws CloneNotSupportedException, IOException, ClassNotFoundException {
         BookInfo bookInfo = bookReposition.findBookById1(id);
 
         if (bookInfo!=null){
@@ -156,7 +160,7 @@ public class BookService {
         for(int i = 0;i<ids.length;i++){
             BookInfo bookInfo = bookReposition.findBookById1(ids[i].toString());
             bookInfo.setEnteringMen(null);
-            bookReposition.delete(bookInfo);
+            bookReposition.deleteById(ids[i]);
         }
         return true;
     }
@@ -176,7 +180,7 @@ public class BookService {
         bookInfo1.setTranslator(bookInfo.getTranslator());
         bookInfo1.setPrice(bookInfo.getPrice());
         bookInfo1.setISBNCode(bookInfo.getISBNCode());
-        bookInfo1.setComeUpTime(bookInfo.getComeUpTime());
+//        bookInfo1.setComeUpTime(bookInfo.getComeUpTime());
         bookInfo1.setAuthor(bookInfo.getAuthor());
         bookInfo1.setBookName(bookInfo.getBookName());
 
@@ -184,8 +188,21 @@ public class BookService {
         return true;
     }
 
-    public boolean addBook(BookInfo bookInfo) throws CloneNotSupportedException{
+    /**
+     * 增加图书
+     * @param userId
+     * @param bookInfo
+     * @return
+     * @throws CloneNotSupportedException
+     */
+    public boolean addBook(String userId,BookInfo bookInfo) throws CloneNotSupportedException{
+        UserModel userModel = userReposition.findUserById1(userId);
 
+        bookInfo.setEnteringMen(userModel);
+        bookInfo.setEnteringDate(new Date());
+        bookInfo.setState(1);
+        bookInfo.setComeUpTime(new Date());
+        bookReposition.save(bookInfo);
         return true;
     }
 

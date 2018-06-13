@@ -1,7 +1,5 @@
 package org.nix.book.dto;
 
-import org.apache.catalina.User;
-import org.nix.book.dto.base.AbstractResultDto;
 import org.nix.book.model.UserModel;
 
 import java.util.ArrayList;
@@ -14,7 +12,7 @@ import java.util.List;
  * @create: 2018-06-06 11:19
  **/
 
-public class UserDto extends AbstractResultDto {
+public class UserDto extends org.nix.bookservice.dto.base.AbstractResultDto {
 
     private List<UserModel> userList;
 

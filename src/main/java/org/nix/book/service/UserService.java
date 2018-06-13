@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.management.Query;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -36,7 +37,7 @@ public class UserService {
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto findUserModelList() throws CloneNotSupportedException{
+    public BaseResultDto findUserModelList() throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         List<UserModel> userList = userReposition.findUserModelList();
 
@@ -54,7 +55,7 @@ public class UserService {
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto login(String userName,String password) throws CloneNotSupportedException{
+    public BaseResultDto login(String userName,String password) throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         List<UserModel> userList = userReposition.login(userName,password);
         if (userList.size()>0){
@@ -96,7 +97,7 @@ public class UserService {
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto findUserById(String id) throws CloneNotSupportedException{
+    public BaseResultDto findUserById(String id) throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         List<UserModel> userList = userReposition.findUserById(id);
         if (userList.size()>0){
@@ -112,7 +113,7 @@ public class UserService {
      * @return
      * @throws CloneNotSupportedException
      */
-    public BaseResultDto findUserById1(String id) throws CloneNotSupportedException{
+    public BaseResultDto findUserById1(String id) throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         UserModel userModel = userReposition.findUserById1(id);
         if (userModel!=null){
@@ -189,9 +190,32 @@ public class UserService {
             recordsReposition.deleteAll(borrowRecordsList);
         }
         return true;
-
-
     }
+
+    /**
+     * 更新用户
+     * @param id
+     * @param userModel
+     * @return
+     */
+    public boolean updateUserById(String id,UserModel userModel) throws CloneNotSupportedException{
+        UserModel userModel1 = userReposition.findUserById1(id);
+        userModel1.setUserName(userModel.getUserName());
+
+        UserInfoModel userInfoModel = userModel.getUserInfoModel();
+        UserInfoModel userInfoModel1 = userModel1.getUserInfoModel();
+
+        userInfoModel1.setPhone(userInfoModel.getPhone());
+        userInfoModel1.setEmail(userInfoModel.getEmail());
+        userInfoModel1.setMajor(userInfoModel.getMajor());
+        userInfoModel1.setDepartments(userInfoModel.getDepartments());
+        userReposition.saveAndFlush(userModel1);
+
+        return  true;
+    }
+
+
+
 
 
 

@@ -38,8 +38,68 @@ $(function () {
         }
     });
 
+    //新增
+    $("#btn_add").click(function(){
+        $("#booModal").modal({show:true});
+
+        //初始化
+        var bookName =  $("#bookName");
+        var author = $("#author");
+        var ISBN = $("#ISBN");
+        var price = $("#price");
+        var publishCompany = $("#publishCompany");
+        var state = $("#state");
+        var translator = $("#translator");
+        var comeUpTime = $("#comeUpTime");
+
+        bookName.val("");
+        author.val("");
+        ISBN.val("");
+        price.val("");
+        publishCompany.val("");
+        state.val("");
+        translator.val("");
+        comeUpTime.val("");
+
+
+        //提交
+        $("#btn_submit").unbind('click').bind('click',(function(){
+
+            var userId = sessionStorage['id'];
+            $.ajax({
+                type: "PUT",
+                url: '/book/addBook',
+                data: {
+                    "userId":userId,
+                    "bookName": bookName.val(),
+                    "author": author.val(),
+                    "translator": translator.val(),
+                    "price": price.val(),
+                    "ISBNCode": ISBN.val(),
+                    // "comeUpTime": comeUpTime.val(),
+                    "state":  state.val(),
+                    "publishCompany":  publishCompany.val()
+                },
+                dataType: "json",
+                success: function (data) {
+                    alert(data.msg);
+                    $("#booModal").modal({show: false});
+                    window.location.reload();
+                },
+                error: function () {
+                    alert("连接失败");
+                    $("#booModal").modal({show: false});
+                }
+            });
+
+        }));
+
+    });
+
+
     //修改
     $("#btn_edit").click(function(){
+
         var temp= $("#bookTable").bootstrapTable('getSelections');
         if(temp.length<=0){
             alert("请至少选中一行");
@@ -64,24 +124,12 @@ $(function () {
             publishCompany.val(temp[0].publishCompany);
             state.val(temp[0].state);
             translator.val(temp[0].translator);
-
-            function timestampToTime(timestamp) {
-                var date = new Date(timestamp * 1000);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
-                Y = date.getFullYear() + '-';
-                M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
-                D = date.getDate() + ' ';
-                h = date.getHours() + ':';
-                m = date.getMinutes() + ':';
-                s = date.getSeconds();
-                return Y+M+D+h+m+s;
-            }
-
-            comeUpTime.val(timestampToTime(temp[0].comeUpTime));
+            comeUpTime.val(temp[0].comeUpTime);
 
             //提交
-            $("#btn_submit").click(function () {
+            $("#btn_submit").unbind('click').bind('click',(function(){
                 $.ajax({
-                    type: "PUT",
+                    type: "POST",
                     url: '/book/updateBook',
                     data: {
                         "id":temp[0].id,
@@ -90,7 +138,7 @@ $(function () {
                         "translator": translator.val(),
                         "price": price.val(),
                         "ISBNCode": ISBN.val(),
-                        "comeUpTime": comeUpTime.val(),
+                        // "comeUpTime": comeUpTime.val(),
                         "state":  state.val(),
                         "publishCompany":  publishCompany.val()
                     },
@@ -106,7 +154,7 @@ $(function () {
                     }
                 });
 
-            });
+            }));
         }else{
             alert('最多只能选择一行');
         }
@@ -156,7 +204,8 @@ var TableInit = function () {
                 title: '图书编号'
             }, {
                 field: 'bookName',
-                title: '书名'
+                title: '书名',
+                searchable:true
             }, {
                 field: 'author',
                 title: '作者'

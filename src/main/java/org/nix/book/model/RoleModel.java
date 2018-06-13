@@ -78,4 +78,5 @@ public class RoleModel extends BaseModel {
                 ", value=" + value +
                 '}';
     }
+
 }

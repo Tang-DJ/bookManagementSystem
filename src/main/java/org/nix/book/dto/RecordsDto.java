@@ -1,9 +1,10 @@
 package org.nix.book.dto;
 
-import org.nix.book.dto.base.AbstractResultDto;
+import org.nix.book.CloneTools;
 import org.nix.book.model.BorrowRecords;
 import org.nix.book.model.UserModel;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
@@ -14,7 +15,7 @@ import java.util.List;
  * @create: 2018-06-07 01:36
  **/
 
-public class RecordsDto extends AbstractResultDto {
+public class RecordsDto extends org.nix.bookservice.dto.base.AbstractResultDto {
 
     private List<BorrowRecords> borrowRecords;
 
@@ -23,13 +24,15 @@ public class RecordsDto extends AbstractResultDto {
     }
 
     @Override
-    public void handler() throws CloneNotSupportedException {
+    public void handler() throws CloneNotSupportedException, IOException, ClassNotFoundException {
         for (BorrowRecords model:borrowRecords) {
             if(model.getReturnTime()==null){
                 Date date = new Date(0);
                 model.setReturnTime(date);
             }
-
+            model.getUserModel().setUserInfoModel(null);
+            model.getUserModel().setRoleModel(null);
+            model.clone();
         }
     }
 

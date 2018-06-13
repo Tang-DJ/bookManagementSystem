@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
 import java.util.Map;
 
 /**
@@ -29,7 +30,7 @@ public class RoleController {
      *  角色列表接口
      */
     @GetMapping(value = "/roleList")
-    public Map<String,Object> findRoleList() throws CloneNotSupportedException {
+    public Map<String,Object> findRoleList() throws CloneNotSupportedException, IOException, ClassNotFoundException {
 
         BaseResultDto roleList = roleService.findRoleList();
 

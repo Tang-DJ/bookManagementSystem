@@ -1,8 +1,10 @@
 package org.nix.book.model.base;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.nix.book.CloneTools;
 
 import javax.persistence.*;
+import java.io.IOException;
 import java.util.Date;
 import java.util.Objects;
 @MappedSuperclass
@@ -34,6 +36,16 @@ public class BaseModel {
     public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
-
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        try {
+            return CloneTools.deepClone(this);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
 }
