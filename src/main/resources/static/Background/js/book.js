@@ -64,7 +64,6 @@ $(function () {
 
         //提交
         $("#btn_submit").unbind('click').bind('click',(function(){
-
             var userId = sessionStorage['id'];
             $.ajax({
                 type: "PUT",
@@ -76,7 +75,7 @@ $(function () {
                     "translator": translator.val(),
                     "price": price.val(),
                     "ISBNCode": ISBN.val(),
-                    // "comeUpTime": comeUpTime.val(),
+                    "comeUpTime": comeUpTime.val(),
                     "state":  state.val(),
                     "publishCompany":  publishCompany.val()
                 },
@@ -138,7 +137,7 @@ $(function () {
                         "translator": translator.val(),
                         "price": price.val(),
                         "ISBNCode": ISBN.val(),
-                        // "comeUpTime": comeUpTime.val(),
+                        "comeUpTime": comeUpTime.val(),
                         "state":  state.val(),
                         "publishCompany":  publishCompany.val()
                     },

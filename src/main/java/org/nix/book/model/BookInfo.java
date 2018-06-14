@@ -92,7 +92,7 @@ public class BookInfo extends BaseModel {
     }
 
     @Column(name = "comeUpTime", length = 19, nullable = false)
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     @Temporal(TemporalType.TIMESTAMP)
     public Date getComeUpTime() {
         return comeUpTime;
